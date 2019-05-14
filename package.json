@@ -1,0 +1,41 @@
+{
+  "name": "open-source-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jimmy Beldone <dev.jimmy.beldone@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JimmyBeldone/open-source-starter"
+  },
+  "bugs": {
+    "email": "dev.jimmy.beldone@gmail.com",
+    "url": "https://github.com/JimmyBeldone/open-source-starter/issues"
+  },
+  "scripts": {
+    "commit": "yarn git-cz"
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
+    "@commitlint/prompt": "^7.6.1",
+    "commitizen": "^3.1.1",
+    "husky": "^2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "boilerplate",
+    "starterkit",
+    "starter kit",
+    "starter",
+    "webpack",
+    "open source",
+    "code formatter",
+    "babel"
+  ]
+}
