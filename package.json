@@ -1,31 +1,67 @@
 {
   "name": "open-source-starter",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
+  "description": "Open source project starter",
   "main": "index.js",
   "author": "Jimmy Beldone <dev.jimmy.beldone@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JimmyBeldone/open-source-starter"
+    "url": "https://github.com/JimmyBeldone/open-source-starter.git"
   },
   "bugs": {
     "email": "dev.jimmy.beldone@gmail.com",
     "url": "https://github.com/JimmyBeldone/open-source-starter/issues"
   },
   "scripts": {
-    "commit": "yarn git-cz"
+    "commit": "npx git-cz",
+    "lint": "eslint src --fix",
+    "pretty": "prettier --write 'src/**/*.js'",
+    "test": "jest --coverage",
+    "prepare": "yarn clean && cross-env NODE_ENV=production yarn build",
+    "clean": "rimraf ./dist",
+    "build": "babel src --out-dir dist --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@commitlint/cli": "^7.6.1",
-    "@commitlint/config-conventional": "^7.6.0",
-    "@commitlint/prompt": "^7.6.1",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
     "commitizen": "^3.1.1",
-    "husky": "^2.3.0"
+    "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "rimraf": "^2.6.3",
+    "semantic-release": "^15.13.12"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{src}/**/*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "keywords": [
@@ -37,5 +73,8 @@
     "open source",
     "code formatter",
     "babel"
-  ]
+  ],
+  "dependencies": {
+    "eslint-plugin-jest": "^22.5.1"
+  }
 }
