@@ -13,7 +13,7 @@
     "url": "https://github.com/JimmyBeldone/open-source-starter/issues"
   },
   "scripts": {
-    "commit": "npx git-cz",
+    "commit": "git-cz",
     "lint": "eslint src --fix",
     "pretty": "prettier --write 'src/**/*.js'",
     "test": "jest --coverage",
@@ -39,6 +39,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
     "eslint-plugin-prettier": "^3.1.0",
     "husky": "^2.3.0",
     "jest": "^24.8.0",
@@ -74,7 +75,5 @@
     "code formatter",
     "babel"
   ],
-  "dependencies": {
-    "eslint-plugin-jest": "^22.5.1"
-  }
+  "dependencies": {}
 }

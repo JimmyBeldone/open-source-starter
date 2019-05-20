@@ -1,7 +1,18 @@
 language: node_js
 
 node_js:
-- stable
+  - stable
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+branches:
+  only:
+    - master
+
+cache: yarn
 
 jobs:
   include:
@@ -17,4 +28,5 @@ jobs:
         provider: script
         skip_cleanup: true
         script: yarn run semantic-release
-        # if: branch = master
+      on:
+        branch: master
