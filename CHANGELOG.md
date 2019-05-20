@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/JimmyBeldone/open-source-starter/compare/v1.0.0...v1.0.1) (2019-05-20)
+
+
+### Bug Fixes
+
+* **package.json:** resolve conflict dependencies ([9289f1c](https://github.com/JimmyBeldone/open-source-starter/commit/9289f1c))
+
 # 1.0.0 (2019-05-16)
 
 
