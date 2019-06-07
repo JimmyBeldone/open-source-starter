@@ -46,7 +46,7 @@
     "lint-staged": "8.2.0",
     "prettier": "1.18.0",
     "rimraf": "2.6.3",
-    "semantic-release": "15.13.15"
+    "semantic-release": "15.13.16"
   },
   "husky": {
     "hooks": {
