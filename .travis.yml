@@ -17,19 +17,30 @@ cache:
   directories:
     - "node_modules"
 
-jobs:
-  include:
-    - stage: install
-      script: yarn
-      skip_cleanup: true
-    - stage: test
-      script: yarn test
-      skip_cleanup: true
-    - stage: release
-      node_js: lts/*
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script: yarn run semantic-release
-      on:
-        branch: master
+install: yarn
+
+script: yarn test
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: yarn run semantic-release
+  on:
+    branch: master
+
+# jobs:
+#   include:
+#     - stage: install
+#       script: yarn
+#       skip_cleanup: true
+#     - stage: test
+#       script: yarn test
+#       skip_cleanup: true
+#     - stage: release
+#       node_js: lts/*
+#       deploy:
+#         provider: script
+#         skip_cleanup: true
+#         script: yarn run semantic-release
+#       on:
+#         branch: master
