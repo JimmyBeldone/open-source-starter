@@ -12,7 +12,10 @@ branches:
   only:
     - master
 
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
 
 jobs:
   include:
