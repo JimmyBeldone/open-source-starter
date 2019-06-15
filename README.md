@@ -122,6 +122,10 @@ It will :
     - Generate `CHANGELOG.md`
     - Publish to NPM & Github
 
+## Contributing
+
+Contributions are welcome ! See [contributing guidelines](https://github.com/JimmyBeldone/open-source-starter/blob/master/CONTRIBUTING.md)
+
 ## License
 
 MIT
