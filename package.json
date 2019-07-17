@@ -25,9 +25,9 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@babel/cli": "7.5.0",
-    "@babel/core": "7.5.4",
-    "@babel/preset-env": "7.5.4",
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
     "@semantic-release/changelog": "3.0.4",
     "@semantic-release/git": "7.0.16",
     "babel-eslint": "10.0.2",
