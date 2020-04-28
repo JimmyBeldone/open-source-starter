@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/JimmyBeldone/open-source-starter/compare/v1.0.2...v1.0.3) (2020-04-28)
+
+
+### Bug Fixes
+
+* update yarn lock ([ad5e55f](https://github.com/JimmyBeldone/open-source-starter/commit/ad5e55f7d5566a83c330ba31b84609fa96680be3))
+
 ## [1.0.2](https://github.com/JimmyBeldone/open-source-starter/compare/v1.0.1...v1.0.2) (2019-06-15)
 
 
