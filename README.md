@@ -1,9 +1,6 @@
 <h1 align="center" style="border-bottom: none;">Open Source Starter </h1>
 <h3 align="center">Pre-configured starter for open source Node projects with automated releases</h3>
 <p align="center">
-    <a href="https://travis-ci.com/JimmyBeldone/open-source-starter">
-        <img alt="travis build" src="https://travis-ci.com/JimmyBeldone/open-source-starter.svg?branch=master">
-    </a>
     <a href="https://github.com/JimmyBeldone/open-source-starter/open-source-starter">
         <img alt="travis build" src="https://github.com/JimmyBeldone/open-source-starter/workflows/TESTING/badge.svg">
     </a>
