@@ -1,8 +1,11 @@
 <h1 align="center" style="border-bottom: none;">Open Source Starter </h1>
 <h3 align="center">Pre-configured starter for open source Node projects with automated releases</h3>
 <p align="center">
-    <a href="https://travis-ci.com/JimmyBeldone/open-source-starter">
-        <img alt="travis build" src="https://travis-ci.com/JimmyBeldone/open-source-starter.svg?branch=master">
+    <a href="https://github.com/JimmyBeldone/open-source-starter/open-source-starter">
+        <img alt="travis build" src="https://github.com/JimmyBeldone/open-source-starter/workflows/TESTING/badge.svg">
+    </a>
+    <a href="https://github.com/JimmyBeldone/open-source-starter/open-source-starter">
+        <img alt="travis build" src="https://github.com/JimmyBeldone/open-source-starter/workflows/PUBLISH/badge.svg">
     </a>
     <a href="#badge">
         <img alt="release number" src="https://badgen.net/github/release/JimmyBeldone/open-source-starter/stable">
@@ -69,16 +72,12 @@ This starter provides all necessary setup to quickly start an open source projec
 
 *config : `jest.config.js`*
 
-### **[TravisCI](https://travis-ci.com/)** : Free continuous integration platform for GitHub projects
-
-*config: `.travis.yml`*
 
 ## Requirements
 
 - NPM account (signup on [https://www.npmjs.com/](https://www.npmjs.com/))
-- TravisCI account (signup on [https://travis-ci.com/](https://travis-ci.com/))
 
-***note:** this repo use TravisCI, but you can use any continuous integration system you want, see **semantic-release-cli [documentation](https://github.com/semantic-release/cli)** for or more informations.*
+***note:** this repo use Github actions, but you can use any continuous integration system you want, see **semantic-release-cli [documentation](https://github.com/semantic-release/cli)** for or more informations.*
 
 ## Installation
 
@@ -86,7 +85,6 @@ This starter provides all necessary setup to quickly start an open source projec
 2. Update the `package.json` file with your repo's information
 3. Configure semantic-release with semantic-release-cli : `npx semantic-release-cli setup`.
 ![semantic-release-cli](https://github.com/semantic-release/semantic-release/raw/master/media/semantic-release-cli.png)
-Once you entered the required informations, semantic-release-cli will add the necessary tokens to your Travis repository settings.
 4. You're all set !
 
 ## Usage
@@ -113,8 +111,8 @@ All you need to do is **merge on master branch**, simple as that.
 
 It will :
 
-1. Triggers Travis build
-2. Run your test during Travis build
+1. Triggers CI
+2. Run your test during CI
 3. Run semantic-release steps :
     - Analyse your commits
     - Bump version
