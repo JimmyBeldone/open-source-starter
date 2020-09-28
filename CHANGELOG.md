@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/JimmyBeldone/open-source-starter/compare/v1.0.4...v1.0.5) (2020-09-28)
+
+
+### Bug Fixes
+
+* change ci ([bdd1026](https://github.com/JimmyBeldone/open-source-starter/commit/bdd10267f9b7fbbb6eaf5238e706bc716f2a127b))
+
 ## [1.0.4](https://github.com/JimmyBeldone/open-source-starter/compare/v1.0.3...v1.0.4) (2020-08-13)
 
 
