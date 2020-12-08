@@ -82,7 +82,7 @@ This starter provides all necessary setup to quickly start an open source projec
 ## Installation
 
 1. Fork or clone this repo `git clone https://github.com/JimmyBeldone/open-source-starter.git`
-2. Update the `package.json` file with your repo's information
+2. Run `yarn setup`
 3. Configure semantic-release with semantic-release-cli : `npx semantic-release-cli setup`.
 ![semantic-release-cli](https://github.com/semantic-release/semantic-release/raw/master/media/semantic-release-cli.png)
 4. You're all set !
