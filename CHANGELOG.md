@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/JimmyBeldone/open-source-starter/compare/v1.1.0...v1.1.1) (2020-12-09)
+
+
+### Bug Fixes
+
+* setup messages ([bd7253e](https://github.com/JimmyBeldone/open-source-starter/commit/bd7253e0fcfce90d48ad48179fbbf6b0e31fb732))
+* update setup config ([1839830](https://github.com/JimmyBeldone/open-source-starter/commit/1839830bf230903f801b3afb2464f38d9ba58764))
+
 # [1.1.0](https://github.com/JimmyBeldone/open-source-starter/compare/v1.0.9...v1.1.0) (2020-12-08)
 
 
