@@ -14,9 +14,9 @@
     },
     "scripts": {
         "commit": "git-cz",
-        "setup": "node setup/setupMessage.js && yarn && node setup/setup.js && yarn start",
+        "setup": "node setup/setupMessage.js && yarn && node setup/setup.js",
         "setup:copy": "rimraf setupCopy && cp ./package.json ./setup/package.json && cp -r ./setup ./setupCopy",
-        "setup:test": "yarn setup:copy && node setup/setupMessage.js && yarn && yarn setup:test:init && yarn start",
+        "setup:test": "yarn setup:copy && node setup/setupMessage.js && yarn && yarn setup:test:init",
         "setup:test:init": "cross-env MODE=test node setup/setup.js",
         "lint": "eslint src --fix",
         "pretty": "prettier --write 'src/**/*.js'",
@@ -36,7 +36,7 @@
         "@semantic-release/git": "9.0.0",
         "babel-eslint": "10.1.0",
         "babel-jest": "26.6.3",
-        "chalk": "^4.1.0",
+        "chalk": "4.1.0",
         "commitizen": "4.2.2",
         "cross-env": "7.0.3",
         "cz-conventional-changelog": "3.3.0",
@@ -50,9 +50,9 @@
         "jest": "26.6.3",
         "lint-staged": "10.5.3",
         "prettier": "2.2.1",
-        "prompts": "^2.4.0",
-        "replace": "^1.2.0",
-        "rimraf": "^3.0.2",
+        "prompts": "2.4.0",
+        "replace": "1.2.0",
+        "rimraf": "3.0.2",
         "semantic-release": "17.3.0"
     },
     "husky": {

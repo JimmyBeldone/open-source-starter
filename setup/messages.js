@@ -48,8 +48,6 @@ ${unicode(icons.biceps)}  Go build something great !
 ${chalkBg('                                         ')}
 
 
-${unicode(icons.rocket)}  Starting server ...
-
 `;
 
 const gitDeleteMessage = `\n${unicode(

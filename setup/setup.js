@@ -21,7 +21,7 @@ const {
 
 const chalkBold = chalk.bold.white;
 
-const writeMessage = (msg) => log(chalkBold(msg));
+const writeMessage = msg => log(chalkBold(msg));
 
 writeMessage(intalledMessage);
 
@@ -39,7 +39,7 @@ const updatePackage = async () => {
 
     const responses = await prompts(questions, { onCancel });
 
-    const values = Object.keys(responses).map((item) => ({
+    const values = Object.keys(responses).map(item => ({
         key: item,
         value: responses[item],
     }));
@@ -51,7 +51,7 @@ const updatePackage = async () => {
     });
 
     // update package.json with the user's values
-    values.forEach((res) => {
+    values.forEach(res => {
         replace({
             paths: [`${pkgJsonPathPrefix}package.json`],
             recursive: false,
@@ -117,7 +117,7 @@ const updatePackage = async () => {
         writeMessage(finalMessage);
 
         // remove all setup scripts from the 'tools' folder
-        rimraf(setupPath, (rmError) => {
+        rimraf(setupPath, rmError => {
             if (rmError) throw new Error(rmError);
         });
     });
@@ -149,7 +149,7 @@ const updatePackage = async () => {
                 writeMessage(gitDeleteMessage);
                 updatePackage();
             } else {
-                rimraf('.git', (error) => {
+                rimraf('.git', error => {
                     if (error) throw new Error(error);
                     writeMessage(gitDeleteMessage);
                     updatePackage();
