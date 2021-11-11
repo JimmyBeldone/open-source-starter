@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/JimmyBeldone/open-source-starter/compare/v1.1.5...v1.1.6) (2021-11-11)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([62db069](https://github.com/JimmyBeldone/open-source-starter/commit/62db069d3ae90f7070f744b6ce500abc576db3ec))
+
 ## [1.1.5](https://github.com/JimmyBeldone/open-source-starter/compare/v1.1.4...v1.1.5) (2021-09-01)
 
 
